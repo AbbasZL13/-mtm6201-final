@@ -4,74 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Verdant Fork</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-<header>
-  <h1>VERDANT FORK</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="careers.html">Careers</a>
-    <a href="about.html">About</a>
+<header class="container d-flex justify-content-between align-items-center py-3">
+
+  <div class="logo-area">
+    <a href="index.html" class="logo-link d-flex align-items-center">
+      <img src="images/logo.png" alt="logo">
+      <h1 class="ms-2">Verdant Fork</h1>
+    </a>
+  </div>
+<!--Navigation bar
+Provides links to all main pages.
+Designed to stay consistent across all pages.-->
+  <nav class="nav">
+    <a href="index.html" class="nav-link-custom">Home</a>
+    <a href="menu.html" class="nav-link-custom">Menu</a>
+    <a href="careers.html" class="nav-link-custom">Careers</a>
+    <a href="about.html" class="nav-link-custom">About</a>
   </nav>
+
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="images/herohome.png" alt="">
-  <div class="hero-text">
-    Fresh. Plant-Based. Community-Driven.
+<main class="container my-5">
+
+ <main>
+
+  <!-- HERO IMAGE -->
+   <!--Hero section
+Main visual banner to introduce the brand.
+Includes headline and short description.-->
+  <section class="hero">
+    <img src="images/herohome.png" class="img-fluid w-100" alt="hero">
+    <div class="hero-text">
+  <h1>Fresh. Plant-Based. Community-Driven.</h1>
+  <p class="hero-subtext">100% Plant Based. No additives. No compromise.</p>
+</div>
+  </section>
+
+  <!-- FEATURES -->
+   <!--Features section
+Highlights key qualities: Delicious, Nutritious, Sustainable.
+Built using Bootstrap grid for alignment.-->
+  <section class="container py-5 text-center">
+
+    <div class="row mb-3">
+      <div class="col-md-4"><h3>Delicious.</h3></div>
+      <div class="col-md-4"><h3>Nutritious.</h3></div>
+      <div class="col-md-4"><h3>Sustainable.</h3></div>
+    </div>
+
+    <hr>
+
+    <div class="row align-items-center">
+
+  <!--GALLERY BUTTON-->
+  <div class="col-md-2 gallery-wrapper">
+    <a href="#" class="btn custom-btn">View Gallery</a>
+    <span class="popup-text">Gallery empty, check back later</span>
   </div>
-</section>
-
-<!-- TAGLINE -->
-<section class="tagline">
-  <h2>Delicious. Nutritious. Sustainable.</h2>
-
-  <div class="categories">
-
-  <div class="card">
-    <img src="images/quinoa.png" alt="">
-    <p>Bowls<br>Healthy and protein packed</p>
+<!--Food categories
+Displays main menu types with images.
+Uses Bootstrap columns for layout.-->
+  <!-- BOWLS -->
+  <div class="col-md-3 text-center">
+    <h4>Bowls</h4>
+    <img src="images/bowl.png" class="img-fluid category-img">
+    <p>Customize your bowl</p>
   </div>
 
-  <div class="card">
-    <img src="images/sald.png" alt="">
-    <p>Salads<br>Fresh and light</p>
+  <!-- SALADS -->
+  <div class="col-md-3 text-center">
+    <h4>Salads</h4>
+    <img src="images/salad-home.png" class="img-fluid category-img">
+    <p>Fresh salads</p>
   </div>
 
-  <div class="card">
-    <img src="images/smoothies.png" alt="">
-    <p>Smoothies<br>Refreshing and natural</p>
+  <!-- SMOOTHIES -->
+  <div class="col-md-3 text-center">
+    <h4>Smoothies</h4>
+    <img src="images/smoothies-home.png" class="img-fluid category-img">
+    <p>Fresh smoothies</p>
+  </div>
+
+  <!-- FULL MENU BUTTON -->
+  <div class="col-md-1 text-center">
+    <a href="fullmenu.html" class="btn custom-btn">View Full Menu</a>
   </div>
 
 </div>
+  <!-- ABOUT -->
+   <!--About section preview
+Brief introduction to the restaurant.
+Encourages users to learn more.-->
+  <section class="container py-5 about-section">
+    <h2 class="text-center mb-4">About Verdant Fork</h2>
 
-  <div class="buttons">
-    <button>View Gallery</button>
-    <button>View Full Menu</button>
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <p>
+          Verdant Fork is a plant-based restaurant focused on fresh ingredients,
+          ethical sourcing, and community-driven dining. We believe food should
+          nourish both people and the planet.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="images/resturant.png" class="img-fluid" alt="">
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+</main>
+<!--Footer
+Contains contact information and social links.
+Consistent across all pages.-->
+
+<footer class="footer mt-5 py-4">
+  <div class="container d-flex justify-content-between flex-wrap text-center text-md-start">
+
+    <div>
+      <p>Verdant Fork © 2026</p>
+      <a href="#">123 Green Street, Ottawa</a>
+    </div>
+
+    <div>
+      <p>info@verdantfork.com</p>
+      <p>(123) 456-7890</p>
+    </div>
+
+    <div>
+      <a href="#">Instagram</a><br>
+      <a href="#">TikTok</a><br>
+      <a href="#">YouTube</a>
+    </div>
+
   </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about">
-
-  <div class="about-text">
-    <h2>About Verdant Fork</h2>
-    <p>
-      Verdant Fork is a plant-based restaurant focused on fresh ingredients,
-      ethical sourcing, and community-driven dining. We believe food should
-      nourish both people and the planet. Our menu is crafted daily with care,
-      bringing together flavor, nutrition, and sustainability.
-    </p>
-  </div>
-
-  <img src="images/resturant.png" alt="restaurant">
-
-</section>
+</footer>
 
 </body>
 </html>
